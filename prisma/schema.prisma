@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model brands {
+  id        Int     @id @default(autoincrement())
+  name      String? @db.VarChar
+  wisher_id Int?
+}
+
+model organization {
+  id             Int     @id @default(autoincrement())
+  verificationid String? @db.VarChar
+  title          String? @db.VarChar
+  wisher_id      Int?
+}
+
+model transactions {
+  id        Int       @id @default(autoincrement())
+  public_id String?   @db.VarChar
+  wisher_id Int?
+  amount    Int?
+  send_at   DateTime? @db.Date
+}
+
+model wisher {
+  id              Int       @id @default(autoincrement())
+  title           String?   @db.VarChar
+  describe        String?   @db.VarChar
+  personInvolved  Int?
+  emergency_level Float?
+  city            Int?
+  problem_type    String?   @db.VarChar
+  balance         Int?
+  amount          Int?
+  created_at      DateTime? @db.Date
+  updated_at      DateTime? @db.Date
+  text            String?   @db.VarChar
+  publicid        String?   @db.VarChar
+  secretid        String?   @db.VarChar
+  is_over         Boolean?
+  location        String?   @db.VarChar
+}

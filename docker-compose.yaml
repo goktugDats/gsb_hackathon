@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  gsb-db:
+    image: postgres:latest
+    container_name: gsb-db
+    environment:
+      POSTGRES_DB: gsbDb
+      POSTGRES_USER: gsbDbUser
+      POSTGRES_PASSWORD: gsbDbPassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - gsb_pg_data:/var/lib/postgresql/data
+
+volumes:
+  gsb_pg_data:

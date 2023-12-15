@@ -84,3 +84,61 @@ export class WisherDTO {
   @ApiProperty({ example: '42.313123,41.3213' })
   location?: string;
 }
+export class WisherCreateDTO {
+  @IsOptional()
+  @IsString()
+  @ApiProperty({ example: 'Example Title' })
+  title?: string;
+
+  @IsOptional()
+  @IsString()
+  @ApiProperty({ example: 'Example Description' })
+  describe?: string;
+
+  @IsOptional()
+  @IsInt()
+  @ApiProperty({ example: 3 })
+  personInvolved?: number;
+
+  @IsOptional()
+  @IsNumber()
+  @ApiProperty({ example: 1.5 })
+  emergency_level?: number;
+
+  @IsOptional()
+  @IsInt()
+  @ApiProperty({ example: 1 })
+  city?: number;
+
+  @IsOptional()
+  @IsString()
+  @ApiProperty({ example: 'Example Problem Type' })
+  problem_type?: string;
+
+  @IsOptional()
+  @IsInt()
+  @ApiProperty({ example: 500 })
+  balance?: number;
+
+  @IsOptional()
+  @IsInt()
+  @ApiProperty({ example: 1000 })
+  amount?: number;
+
+
+  @IsOptional()
+  @IsString()
+  @ApiProperty({ example: 'Example Text' })
+  text?: string;
+
+
+  @IsOptional()
+  @IsBoolean()
+  @ApiProperty({ example: false })
+  is_over?: boolean;
+
+  @IsOptional()
+  @IsString()
+  @ApiProperty({ example: '42.313123,41.3213' })
+  location?: string;
+}

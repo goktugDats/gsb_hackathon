@@ -8,15 +8,15 @@ import {
 } from '@nestjs/common';
 import { WisherService } from './wisher.service';
 import { ApiBody, ApiParam, ApiResponse } from '@nestjs/swagger';
-import { WisherDTO } from './dto/wisher.dto';
+import { WisherCreateDTO, WisherDTO } from "./dto/wisher.dto";
 import { BrandDTO } from './dto/brand.dto';
 
 @Controller()
 export class WisherController {
   constructor(private readonly wisherService: WisherService) {}
   @Post('wisher/create')
-  @ApiBody({ type: WisherDTO })
-  createWisher(@Body() wisherDTO: WisherDTO) {
+  @ApiBody({ type: WisherCreateDTO })
+  createWisher(@Body() wisherDTO: WisherCreateDTO) {
     return this.wisherService.createWisher(wisherDTO);
   }
 

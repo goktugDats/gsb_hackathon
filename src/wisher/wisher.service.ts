@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { PrismaService } from './prisma.service';
-import { WisherDTO } from './dto/wisher.dto';
+import { WisherCreateDTO, WisherDTO } from './dto/wisher.dto';
 import { BrandDTO } from './dto/brand.dto';
 
 @Injectable()
@@ -10,14 +10,31 @@ export class WisherService {
     private readonly prisma: PrismaService,
   ) {}
 
-  async createWisher(data: WisherDTO) {
+  async createWisher(data: WisherCreateDTO) {
+    const wisher: WisherDTO = {
+      title: data.title,
+      describe: data.describe,
+      personInvolved: data.personInvolved,
+      emergency_level: data.emergency_level,
+      city: data.city,
+      problem_type: data.problem_type,
+      balance: data.balance,
+      amount: data.amount,
+      created_at: new Date(),
+      updated_at: new Date(),
+      publicid: 'example',
+      secretid: 'example',
+      text: data.text,
+      is_over: false,
+      location: data.location,
+    };
     return this.prisma.wisher.create({
-      data: data,
+      data: wisher,
     });
   }
 
   async getAllWishers() {
-    return await this.prisma.wisher.findMany();
+    return await this.prisma.wisher.findMany({ where: { is_over: false } });
   }
 
   async getWishersByEmergencyId(id: number) {

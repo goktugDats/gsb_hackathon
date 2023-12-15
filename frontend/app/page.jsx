@@ -6,8 +6,13 @@ const Home = () => {
       <h1 className="head_text text-center blue_gradient">
                Yardım et ve Destekle
                 <br className="max-md:hidden" />
-            </h1>
-            <Map />
+                <br className="max-md:hidden" />
+                <br className="max-md:hidden" />
+      </h1>
+      <Map />
+      <br className="max-md:hidden" />
+      <br className="max-md:hidden" />
+      <br className="max-md:hidden" />
     </section>
   )
 }

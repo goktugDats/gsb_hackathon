@@ -1,10 +1,8 @@
 "use client"
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState} from 'react';
 import { ethers, formatEther } from 'ethers';
 import { Web3Provider } from '@ethersproject/providers';
-import contractABI from '../getJson/MyContract.json'
 
 const Nav = () => {
 
@@ -43,7 +41,7 @@ const Nav = () => {
       <section>
         <span style={{ fontSize: 20 }}> <span style={{ fontSize: 20, fontWeight:'bold' }}>Account: </span> {user.substring(0,10)+"..."}</span>
         <br />
-        <span style={{ fontSize: 20 }}> <span style={{ fontSize: 20, fontWeight: 'bold' }}>Amount: </span> {userBalance+" BB"}</span>
+        <span style={{ fontSize: 20 }}> <span style={{ fontSize: 20, fontWeight: 'bold' }}>Amount: </span> {userBalance+" USDT"}</span>
       </section>
     </nav>
   )

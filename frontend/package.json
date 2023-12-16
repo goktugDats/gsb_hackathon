@@ -13,6 +13,8 @@
     "@ethersproject/units": "^5.7.0",
     "@googlemaps/js-api-loader": "^1.16.2",
     "@react-google-maps/api": "^2.19.2",
+    "@solana/web3.js": "^1.87.6",
+    "axios": "^1.6.2",
     "ethers": "^6.8.1",
     "formidable": "^3.5.1",
     "kafkajs": "^2.2.4",

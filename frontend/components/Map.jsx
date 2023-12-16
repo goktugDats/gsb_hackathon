@@ -107,6 +107,22 @@ const locations3 = [
   { lat: 38.4192, lng: 27.1287 }, // Izmir
 ];
 
+const locations = [
+  {
+    name: "Location 1",
+    location: {
+      lat: 40.712776,
+      lng: -74.005974
+    },
+  },
+  {
+    name: "Location 2",
+    location: {
+      lat: 34.052235,
+      lng: -118.243683
+    },
+  }
+];
 
 
 const Map = () => {

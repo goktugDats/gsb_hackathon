@@ -1,7 +1,12 @@
 'use client'
 import Map from '@components/Map'
+import React, { useEffect } from 'react';
+
+
 const Home = () => {
-  return (
+
+
+    return (
     <section className="w-full flex-center flex-col">
       <h1 className="head_text text-center blue_gradient">
                Yardım et ve Destekle
@@ -10,6 +15,7 @@ const Home = () => {
                 <br className="max-md:hidden" />
       </h1>
       <Map />
+      
       <br className="max-md:hidden" />
       <br className="max-md:hidden" />
       <br className="max-md:hidden" />

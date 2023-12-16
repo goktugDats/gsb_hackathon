@@ -1,15 +1,15 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
 
 const containerStyle = {
-  width: '1500px',
-  height: '500px',
+  width: '1600px',
+  height: '600px',
   borderRadius: "50px"
 };
 
 const center = {
-  lat: 39.2, 
+  lat: 39.2,
   lng: 37.2
 };
 
@@ -73,7 +73,7 @@ const mapStyles = [
       { "color": "#343332" }
     ]
   },
-  
+
   {
     "elementType": "labels",
     "stylers": [
@@ -100,16 +100,25 @@ const Map = () => {
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API
   })
 
+  useEffect(() => {
+    const imgElement = document.querySelector('img[alt="Google"]');
+    if (imgElement) {
+      imgElement.remove();
+    }
+  }, []);
+
   const [map, setMap] = React.useState(null)
 
   const markerIcon = isLoaded ? {
     url: '../assets/icons/point.png',
-    scaledSize: new window.google.maps.Size(30, 30), 
+    scaledSize: new window.google.maps.Size(30, 30),
   } : null;
 
   const onLoad = React.useCallback(function callback(map) {
     setMap(map)
   }, [])
+
+  const [activeTab, setActiveTab] = useState('disaster');
 
   const [selectedLocation, setSelectedLocation] = React.useState(null);
 
@@ -119,42 +128,57 @@ const Map = () => {
   }, [])
 
   return isLoaded ? (
-    <GoogleMap
-      mapContainerStyle={containerStyle}
-      center={center}
-      zoom={6}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
-      options={{
-        styles: mapStyles, disableDefaultUI: true }}
-    >
-      {locations.map((location, i) => (
-        <Marker
-          key={i}
-          position={location}
-          icon={markerIcon}
-          onClick={() => {
-            setSelectedLocation(location);
-          }}
-        />
-      ))}
+    
+    <>
+        <nav>
+          <button onClick={() => setActiveTab('disaster')}>Doğal Afet</button>
+          <button onClick={() => setActiveTab('disease')}>Hastalık</button>
+          <button onClick={() => setActiveTab('emergency')}>Acil</button>
+        </nav>
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={6}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+        options={{
+          styles: mapStyles, disableDefaultUI: true
+        }}
+      >
+        
+        {locations.map((location, i) => (
+          <Marker
+            key={i}
+            position={location}
+            icon={markerIcon}
+            onClick={() => {
+              setSelectedLocation(location);
+            }}
+          />
+        ))}
 
-      {selectedLocation && (
-        <InfoWindow
-          position={selectedLocation}
-          onCloseClick={() => {
-            setSelectedLocation(null);
-          }}
-        >
-          <div>
-            <h2>Selected Location</h2>
-            <p>Lat: {selectedLocation.lat}</p>
-            <p>Lng: {selectedLocation.lng}</p>
-          </div>
-        </InfoWindow>
-      )}
-    </GoogleMap>
-  ) : <></>
+        {selectedLocation && (
+          <InfoWindow
+            position={selectedLocation}
+            onCloseClick={() => {
+              setSelectedLocation(null);
+            }}
+          >
+            <div >
+
+              <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Enlem: {selectedLocation.lat} Boylam: {selectedLocation.lng}</p>
+              </a>
+
+            </div>
+          </InfoWindow>
+        )}
+      </GoogleMap>
+    </>
+    ) : <></>
+
 }
 
 export default Map;

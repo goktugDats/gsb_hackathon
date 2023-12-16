@@ -82,7 +82,7 @@ const mapStyles = [
   }
 ];
 
-const locations = [
+const locations1 = [
   { lat: 41.0082, lng: 28.9784 }, // Istanbul
   { lat: 39.9334, lng: 32.8597 }, // Ankara
   { lat: 39.9208, lng: 32.8541 }, // Erzurum
@@ -90,6 +90,21 @@ const locations = [
   { lat: 36.8623, lng: 34.6415 }, // Mersin
   { lat: 38.4192, lng: 27.1287 }, // Izmir
   { lat: 41.2049, lng: 32.6277 }, // Karabük
+];
+const locations2 = [
+  { lat: 41.0082, lng: 28.9784 }, // Istanbul
+  { lat: 39.9334, lng: 32.8597 }, // Ankara
+  { lat: 39.9208, lng: 32.8541 }, // Erzurum
+  { lat: 37.8713, lng: 32.4847 }, // Konya
+  { lat: 36.8623, lng: 34.6415 }, // Mersin
+];
+const locations3 = [
+  { lat: 41.0082, lng: 28.9784 }, // Istanbul
+  { lat: 39.9334, lng: 32.8597 }, // Ankara
+  { lat: 39.9208, lng: 32.8541 }, // Erzurum
+  { lat: 37.8713, lng: 32.4847 }, // Konya
+  { lat: 36.8623, lng: 34.6415 }, // Mersin
+  { lat: 38.4192, lng: 27.1287 }, // Izmir
 ];
 
 
@@ -130,10 +145,10 @@ const Map = () => {
   return isLoaded ? (
     
     <>
-        <nav>
-          <button onClick={() => setActiveTab('disaster')}>Doğal Afet</button>
-          <button onClick={() => setActiveTab('disease')}>Hastalık</button>
-          <button onClick={() => setActiveTab('emergency')}>Acil</button>
+        <nav className="flex justify-center space-x-4 my-4">
+          <button onClick={() => setActiveTab('disaster')} className="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600">Doğal Afet</button>
+          <button onClick={() => setActiveTab('disease')} className="px-4 py-2 text-white bg-yellow-500 rounded hover:bg-yellow-600">Hastalık</button>
+          <button onClick={() => setActiveTab('emergency')} className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Acil</button>
         </nav>
       <GoogleMap
         mapContainerStyle={containerStyle}
@@ -146,7 +161,7 @@ const Map = () => {
         }}
       >
         
-        {locations.map((location, i) => (
+        {(activeTab === 'disaster' ? locations1 : activeTab === 'disease' ? locations2 : locations3).map((location, i) => (
           <Marker
             key={i}
             position={location}
@@ -164,14 +179,11 @@ const Map = () => {
               setSelectedLocation(null);
             }}
           >
-            <div >
-
-              <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <div>
+              <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bilgi Kartı</h5>
                 <p class="font-normal text-gray-700 dark:text-gray-400">Enlem: {selectedLocation.lat} Boylam: {selectedLocation.lng}</p>
-              </a>
-
+              </div>
             </div>
           </InfoWindow>
         )}

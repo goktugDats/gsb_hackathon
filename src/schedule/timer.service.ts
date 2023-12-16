@@ -9,7 +9,7 @@ export class TimerService {
     private readonly prismaService: PrismaService,
     private readonly solonaService: SolanaService,
   ) {}
-  @Interval(500000) // Her 5 saniyede bir çalışır
+  @Interval(50000000) // Her 5 saniyede bir çalışır
   async handleInterval() {
     console.log('Running task every 5 seconds...');
     const db_query = await this.prismaService.wisher.findMany({

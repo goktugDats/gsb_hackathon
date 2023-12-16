@@ -57,7 +57,7 @@ export class WisherService {
 
   async getWishersByEmergencyId(id: number) {
     return await this.prisma.$queryRawUnsafe(
-      'select * from wisher w where w.emergency_level > $1;',
+      'select * from wisher w where w.emergency_level > $1 and is_over is false;',
       id,
     );
   }

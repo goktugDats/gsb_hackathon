@@ -10,6 +10,7 @@ import { WisherService } from './wisher.service';
 import { ApiBody, ApiParam, ApiResponse } from '@nestjs/swagger';
 import { WisherCreateDTO, WisherDTO } from "./dto/wisher.dto";
 import { BrandDTO } from './dto/brand.dto';
+import { CheckoutDto } from "./dto/checkout.dto";
 
 @Controller()
 export class WisherController {
@@ -36,5 +37,11 @@ export class WisherController {
   @ApiBody({ type: BrandDTO })
   async createBrand(@Body() brandDTO: BrandDTO) {
     return await this.wisherService.createBrand(brandDTO);
+  }
+
+  @Post('wisher/checkout')
+  @ApiBody({ type: CheckoutDto })
+  async checkout(@Body() checkoutDto: CheckoutDto) {
+    return await this.wisherService.transaction(checkoutDto);
   }
 }

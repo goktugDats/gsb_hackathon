@@ -7,7 +7,7 @@ export class CheckoutDto {
   @Min(0, { message: 'Amount must be a positive number' })
   @ApiProperty({
     type: Number,
-    example: 100,
+    example: 0.2,
     description: 'The amount to be checked out',
   })
   amount: number;

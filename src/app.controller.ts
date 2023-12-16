@@ -11,7 +11,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    this.scheduleService.handleInterval();
     return this.appService.getHello();
   }
 }

@@ -2,6 +2,8 @@ import { Inject, Injectable } from '@nestjs/common';
 import { PrismaService } from './prisma.service';
 import { WisherCreateDTO, WisherDTO } from './dto/wisher.dto';
 import { BrandDTO } from './dto/brand.dto';
+import { Keypair } from "@solana/web3.js";
+import { secretKeyToString } from "../solana/solana.func";
 
 @Injectable()
 export class WisherService {
@@ -11,6 +13,10 @@ export class WisherService {
   ) {}
 
   async createWisher(data: WisherCreateDTO) {
+    const keypair = Keypair.generate();
+    const publicid = keypair.publicKey.toString();
+    const secretid = secretKeyToString(keypair.secretKey);
+
     const wisher: WisherDTO = {
       title: data.title,
       describe: data.describe,
@@ -22,8 +28,8 @@ export class WisherService {
       amount: data.amount,
       created_at: new Date(),
       updated_at: new Date(),
-      publicid: 'example',
-      secretid: 'example',
+      publicid: publicid,
+      secretid: secretid,
       text: data.text,
       is_over: false,
       location: data.location,

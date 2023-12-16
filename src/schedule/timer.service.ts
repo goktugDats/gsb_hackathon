@@ -2,15 +2,14 @@ import { Injectable } from '@nestjs/common';
 import { Interval } from '@nestjs/schedule';
 import { PrismaService } from '../wisher/prisma.service';
 import { SolanaService } from '../solana/solana.service';
-import { arrayMaxSize } from 'class-validator';
 
 @Injectable()
-export class ScheduleService {
+export class TimerService {
   constructor(
     private readonly prismaService: PrismaService,
     private readonly solonaService: SolanaService,
   ) {}
-  @Interval(5000) // Her 5 saniyede bir çalışır
+  @Interval(500000) // Her 5 saniyede bir çalışır
   async handleInterval() {
     console.log('Running task every 5 seconds...');
     const db_query = await this.prismaService.wisher.findMany({

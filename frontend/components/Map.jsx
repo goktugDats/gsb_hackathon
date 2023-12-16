@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
+import Link from 'next/link';
 
 const containerStyle = {
   width: '1600px',
@@ -77,12 +78,21 @@ const mapStyles = [
   {
     "elementType": "labels",
     "stylers": [
-      { "visibility": "off" }
+      { "visibility": "on" },
+      { "color": "#000000" },
+      
+    ]
+  },
+
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      { "color": "#ffffff" }
     ]
   }
 ];
 
-const api = [
+const api1 = [
   {
     "id": 5,
     "title": "Example Title",
@@ -189,6 +199,21 @@ const api = [
 
 
 const Map = () => {
+
+  const [api, setApi] = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch('http://localhost:3000/wisher/all');
+      if (!response.ok) {
+        throw new Error("HTTP error " + response.status);
+      }
+      const data = await response.json();
+      setApi(data);
+    }
+
+    fetchData();
+  }, []);
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API
@@ -233,7 +258,7 @@ const Map = () => {
           setShowSubButtons(!showSubButtons);
         }} className="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600">Doğal Afet</button>
         <button onClick={() => {setActiveTab('disease'); setProblemType(6)}} className="px-4 py-2 text-white bg-yellow-500 rounded hover:bg-yellow-600">Hastalık</button>
-        <button onClick={() => setActiveTab('emergency')} className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Acil</button>
+        <button onClick={() => setActiveTab('emergency')} className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Acil Yardım</button>
       </nav>
       {showSubButtons && activeTab === 'disaster' && (
         <nav className="flex justify-center space-x-4 my-4">
@@ -305,7 +330,9 @@ const Map = () => {
                 <div class="bg-yellow-400 h-2.5 rounded-full" style={{ width: `${(selectedLocation.balance / selectedLocation.amount) * 100}%` }}></div>
               </div>
               <button onClick={() => window.open(`https://www.google.com/maps/dir//${parseFloat(selectedLocation.location.split(",")[0])},${parseFloat(selectedLocation.location.split(",")[1])}`, "_blank")} className="px-4 py-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-600">Yol Tarifi Al</button>
-
+          <Link href="/odeme">
+                <div style={{width:'98px'}} className="px-4 py-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-600">Ödeme Yap</div>
+              </Link>
             </div>
           </InfoWindow>
         )}

@@ -2,8 +2,20 @@ import { Inject, Injectable } from '@nestjs/common';
 import { PrismaService } from './prisma.service';
 import { WisherCreateDTO, WisherDTO } from './dto/wisher.dto';
 import { BrandDTO } from './dto/brand.dto';
-import { Keypair } from "@solana/web3.js";
-import { secretKeyToString } from "../solana/solana.func";
+import {
+  Connection,
+  Keypair,
+  LAMPORTS_PER_SOL,
+  PublicKey,
+  sendAndConfirmTransaction,
+  SystemProgram,
+  Transaction,
+} from '@solana/web3.js';
+import {
+  secretKeyToString,
+  stringSecretKeyToKeyPair,
+} from '../solana/solana.func';
+import { CheckoutDto } from "./dto/checkout.dto";
 
 @Injectable()
 export class WisherService {
@@ -52,6 +64,40 @@ export class WisherService {
   async createBrand(data: BrandDTO) {
     return await this.prisma.brands.create({
       data: data,
+    });
+  }
+
+  async transaction(checkoutDto: CheckoutDto) {
+    const wisher = await this.prisma.wisher.findUnique({
+      where: {
+        id: checkoutDto.wisher_id,
+      },
+    });
+
+    const connection = new Connection(
+      'https://api.devnet.solana.com',
+      'confirmed',
+    );
+
+    const lamportsToSend = 1_000_000;
+
+    const transferTransaction = new Transaction().add(
+      SystemProgram.transfer({
+        fromPubkey: new PublicKey(wisher.publicid),
+        toPubkey: new PublicKey(checkoutDto.toPublicKey),
+        lamports: lamportsToSend * checkoutDto.amount,
+      }),
+    );
+    const keypair = stringSecretKeyToKeyPair(wisher.secretid);
+    await sendAndConfirmTransaction(connection, transferTransaction, [keypair]);
+
+    return await this.prisma.wisher.update({
+      where: {
+        id: checkoutDto.wisher_id,
+      },
+      data: {
+        check_out: checkoutDto.amount,
+      },
     });
   }
 }

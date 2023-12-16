@@ -45,4 +45,5 @@ model wisher {
   secretid        String?   @db.VarChar
   is_over         Boolean?
   location        String?   @db.VarChar
+  check_out       Int?
 }

@@ -30,6 +30,7 @@ export class TimerService {
             id: db_query[i].id,
           },
           data: {
+            balance: chain_balance,
             is_over: true,
           },
         });

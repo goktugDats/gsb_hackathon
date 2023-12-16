@@ -78,138 +78,6 @@ module.exports = require("next/dist\\client\\components\\static-generation-async
 
 /***/ }),
 
-/***/ "assert":
-/*!*************************!*\
-  !*** external "assert" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("assert");
-
-/***/ }),
-
-/***/ "events":
-/*!*************************!*\
-  !*** external "events" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("events");
-
-/***/ }),
-
-/***/ "fs":
-/*!*********************!*\
-  !*** external "fs" ***!
-  \*********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("fs");
-
-/***/ }),
-
-/***/ "http":
-/*!***********************!*\
-  !*** external "http" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("http");
-
-/***/ }),
-
-/***/ "https":
-/*!************************!*\
-  !*** external "https" ***!
-  \************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("https");
-
-/***/ }),
-
-/***/ "os":
-/*!*********************!*\
-  !*** external "os" ***!
-  \*********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("os");
-
-/***/ }),
-
-/***/ "path":
-/*!***********************!*\
-  !*** external "path" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("path");
-
-/***/ }),
-
-/***/ "stream":
-/*!*************************!*\
-  !*** external "stream" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("stream");
-
-/***/ }),
-
-/***/ "tty":
-/*!**********************!*\
-  !*** external "tty" ***!
-  \**********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("tty");
-
-/***/ }),
-
-/***/ "url":
-/*!**********************!*\
-  !*** external "url" ***!
-  \**********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("url");
-
-/***/ }),
-
-/***/ "util":
-/*!***********************!*\
-  !*** external "util" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("util");
-
-/***/ }),
-
-/***/ "zlib":
-/*!***********************!*\
-  !*** external "zlib" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("zlib");
-
-/***/ }),
-
 /***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fnot-found&page=%2Fnot-found&appPaths=&pagePath=node_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-error.js&appDir=C%3A%5CUsers%5Cganba%5CMasa%C3%BCst%C3%BC%5CMasa%C3%BCst%C3%BC%5CYeni%20klas%C3%B6r%5Cfrontend%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cganba%5CMasa%C3%BCst%C3%BC%5CMasa%C3%BCst%C3%BC%5CYeni%20klas%C3%B6r%5Cfrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fnot-found&page=%2Fnot-found&appPaths=&pagePath=node_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-error.js&appDir=C%3A%5CUsers%5Cganba%5CMasa%C3%BCst%C3%BC%5CMasa%C3%BCst%C3%BC%5CYeni%20klas%C3%B6r%5Cfrontend%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cganba%5CMasa%C3%BCst%C3%BC%5CMasa%C3%BCst%C3%BC%5CYeni%20klas%C3%B6r%5Cfrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D! ***!
@@ -248,7 +116,7 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__w
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/shared/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ \"(ssr)/./node_modules/next/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\nconst Nav = ()=>{\n    const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(\"\");\n    const [userBalance, setuserBalance] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0);\n    const connectWallet = async ()=>{\n        if (\"solana\" in window) {\n            const provider = window.solana;\n            if (provider.isPhantom) {\n                await provider.connect();\n                setUser(provider.publicKey.toString());\n                const response = await axios__WEBPACK_IMPORTED_MODULE_3__[\"default\"].get(`https://your-api.com/user/${user}`);\n                console.log(response.data);\n            }\n        } else {\n            console.log(\"Please install Phantom wallet\");\n        }\n    };\n    connectWallet();\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"nav\", {\n        className: \"flex-between w-full mb-16 pt-3\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {\n                href: \"/\",\n                className: \"flex gap-2 items-center\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                    className: \" head_text text-center\",\n                    style: {\n                        fontSize: 40\n                    },\n                    children: \"Help Map\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                    lineNumber: 35,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                lineNumber: 34,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                        style: {\n                            fontSize: 20\n                        },\n                        children: [\n                            \" \",\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                style: {\n                                    fontSize: 20,\n                                    fontWeight: \"bold\"\n                                },\n                                children: \"Account: \"\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                                lineNumber: 38,\n                                columnNumber: 41\n                            }, undefined),\n                            \" \",\n                            user.substring(0, 10) + \"...\"\n                        ]\n                    }, void 0, true, {\n                        fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                        lineNumber: 38,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"br\", {}, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                        lineNumber: 39,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                        style: {\n                            fontSize: 20\n                        },\n                        children: [\n                            \" \",\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                style: {\n                                    fontSize: 20,\n                                    fontWeight: \"bold\"\n                                },\n                                children: \"Amount: \"\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                                lineNumber: 40,\n                                columnNumber: 41\n                            }, undefined),\n                            \" \",\n                            userBalance + \" USDT\"\n                        ]\n                    }, void 0, true, {\n                        fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                        lineNumber: 40,\n                        columnNumber: 9\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                lineNumber: 37,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n        lineNumber: 33,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9jb21wb25lbnRzL05hdi5qc3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBQzZCO0FBQ0c7QUFDTjtBQUsxQixNQUFNRyxNQUFNO0lBRVYsTUFBTSxDQUFDQyxNQUFNQyxRQUFRLEdBQUdKLCtDQUFRQSxDQUFDO0lBQ2pDLE1BQU0sQ0FBQ0ssYUFBYUMsZUFBZSxHQUFHTiwrQ0FBUUEsQ0FBQztJQUUvQyxNQUFNTyxnQkFBZ0I7UUFDcEIsSUFBSSxZQUFZQyxRQUFRO1lBQ3RCLE1BQU1DLFdBQVdELE9BQU9FLE1BQU07WUFDOUIsSUFBSUQsU0FBU0UsU0FBUyxFQUFFO2dCQUN0QixNQUFNRixTQUFTRyxPQUFPO2dCQUN0QlIsUUFBU0ssU0FBU0ksU0FBUyxDQUFDQyxRQUFRO2dCQUVwQyxNQUFNQyxXQUFXLE1BQU1kLDZDQUFLQSxDQUFDZSxHQUFHLENBQUMsQ0FBQywwQkFBMEIsRUFBRWIsS0FBSyxDQUFDO2dCQUNwRWMsUUFBUUMsR0FBRyxDQUFDSCxTQUFTSSxJQUFJO1lBQzNCO1FBQ0YsT0FBTztZQUNMRixRQUFRQyxHQUFHLENBQUM7UUFDZDtJQUNGO0lBRUFYO0lBR0EscUJBQ0UsOERBQUNhO1FBQUlDLFdBQVU7OzBCQUNiLDhEQUFDdEIsa0RBQUlBO2dCQUFDdUIsTUFBSztnQkFBSUQsV0FBVTswQkFDdkIsNEVBQUNFO29CQUFLRixXQUFVO29CQUF5QkcsT0FBTzt3QkFBRUMsVUFBVTtvQkFBRzs4QkFBRzs7Ozs7Ozs7Ozs7MEJBRXBFLDhEQUFDQzs7a0NBQ0MsOERBQUNIO3dCQUFLQyxPQUFPOzRCQUFFQyxVQUFVO3dCQUFHOzs0QkFBRzswQ0FBQyw4REFBQ0Y7Z0NBQUtDLE9BQU87b0NBQUVDLFVBQVU7b0NBQUlFLFlBQVc7Z0NBQU87MENBQUc7Ozs7Ozs0QkFBZ0I7NEJBQUV4QixLQUFLeUIsU0FBUyxDQUFDLEdBQUUsTUFBSTs7Ozs7OztrQ0FDekgsOERBQUNDOzs7OztrQ0FDRCw4REFBQ047d0JBQUtDLE9BQU87NEJBQUVDLFVBQVU7d0JBQUc7OzRCQUFHOzBDQUFDLDhEQUFDRjtnQ0FBS0MsT0FBTztvQ0FBRUMsVUFBVTtvQ0FBSUUsWUFBWTtnQ0FBTzswQ0FBRzs7Ozs7OzRCQUFlOzRCQUFFdEIsY0FBWTs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUl4SDtBQUVBLGlFQUFlSCxHQUFHQSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbXktYXBwLy4vY29tcG9uZW50cy9OYXYuanN4Pzk4OTkiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2UgY2xpZW50XCJcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcclxuaW1wb3J0IHsgdXNlU3RhdGV9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IGF4aW9zIGZyb20gJ2F4aW9zJztcclxuXHJcblxyXG5cclxuXHJcbmNvbnN0IE5hdiA9ICgpID0+IHtcclxuXHJcbiAgY29uc3QgW3VzZXIsIHNldFVzZXJdID0gdXNlU3RhdGUoXCJcIik7XHJcbiAgY29uc3QgW3VzZXJCYWxhbmNlLCBzZXR1c2VyQmFsYW5jZV0gPSB1c2VTdGF0ZSgwKTtcclxuXHJcbiAgY29uc3QgY29ubmVjdFdhbGxldCA9IGFzeW5jICgpID0+IHtcclxuICAgIGlmIChcInNvbGFuYVwiIGluIHdpbmRvdykge1xyXG4gICAgICBjb25zdCBwcm92aWRlciA9IHdpbmRvdy5zb2xhbmE7XHJcbiAgICAgIGlmIChwcm92aWRlci5pc1BoYW50b20pIHtcclxuICAgICAgICBhd2FpdCBwcm92aWRlci5jb25uZWN0KCk7XHJcbiAgICAgICAgc2V0VXNlciggcHJvdmlkZXIucHVibGljS2V5LnRvU3RyaW5nKCkpO1xyXG5cclxuICAgICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGF4aW9zLmdldChgaHR0cHM6Ly95b3VyLWFwaS5jb20vdXNlci8ke3VzZXJ9YCk7XHJcbiAgICAgICAgY29uc29sZS5sb2cocmVzcG9uc2UuZGF0YSk7XHJcbiAgICAgIH1cclxuICAgIH0gZWxzZSB7XHJcbiAgICAgIGNvbnNvbGUubG9nKFwiUGxlYXNlIGluc3RhbGwgUGhhbnRvbSB3YWxsZXRcIik7XHJcbiAgICB9XHJcbiAgfTtcclxuXHJcbiAgY29ubmVjdFdhbGxldCgpO1xyXG5cclxuXHJcbiAgcmV0dXJuIChcclxuICAgIDxuYXYgY2xhc3NOYW1lPSdmbGV4LWJldHdlZW4gdy1mdWxsIG1iLTE2IHB0LTMnPlxyXG4gICAgICA8TGluayBocmVmPVwiL1wiIGNsYXNzTmFtZT0nZmxleCBnYXAtMiBpdGVtcy1jZW50ZXInPlxyXG4gICAgICAgIDxzcGFuIGNsYXNzTmFtZT0nIGhlYWRfdGV4dCB0ZXh0LWNlbnRlcicgc3R5bGU9e3sgZm9udFNpemU6IDQwIH19PkhlbHAgTWFwPC9zcGFuPlxyXG4gICAgICA8L0xpbms+XHJcbiAgICAgIDxzZWN0aW9uPlxyXG4gICAgICAgIDxzcGFuIHN0eWxlPXt7IGZvbnRTaXplOiAyMCB9fT4gPHNwYW4gc3R5bGU9e3sgZm9udFNpemU6IDIwLCBmb250V2VpZ2h0Oidib2xkJyB9fT5BY2NvdW50OiA8L3NwYW4+IHt1c2VyLnN1YnN0cmluZygwLDEwKStcIi4uLlwifTwvc3Bhbj5cclxuICAgICAgICA8YnIgLz5cclxuICAgICAgICA8c3BhbiBzdHlsZT17eyBmb250U2l6ZTogMjAgfX0+IDxzcGFuIHN0eWxlPXt7IGZvbnRTaXplOiAyMCwgZm9udFdlaWdodDogJ2JvbGQnIH19PkFtb3VudDogPC9zcGFuPiB7dXNlckJhbGFuY2UrXCIgVVNEVFwifTwvc3Bhbj5cclxuICAgICAgPC9zZWN0aW9uPlxyXG4gICAgPC9uYXY+XHJcbiAgKVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBOYXY7XHJcbiJdLCJuYW1lcyI6WyJMaW5rIiwidXNlU3RhdGUiLCJheGlvcyIsIk5hdiIsInVzZXIiLCJzZXRVc2VyIiwidXNlckJhbGFuY2UiLCJzZXR1c2VyQmFsYW5jZSIsImNvbm5lY3RXYWxsZXQiLCJ3aW5kb3ciLCJwcm92aWRlciIsInNvbGFuYSIsImlzUGhhbnRvbSIsImNvbm5lY3QiLCJwdWJsaWNLZXkiLCJ0b1N0cmluZyIsInJlc3BvbnNlIiwiZ2V0IiwiY29uc29sZSIsImxvZyIsImRhdGEiLCJuYXYiLCJjbGFzc05hbWUiLCJocmVmIiwic3BhbiIsInN0eWxlIiwiZm9udFNpemUiLCJzZWN0aW9uIiwiZm9udFdlaWdodCIsInN1YnN0cmluZyIsImJyIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./components/Nav.jsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/shared/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ \"(ssr)/./node_modules/next/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\nconst Nav = ()=>{\n    const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(\"\");\n    const [userBalance, setuserBalance] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0);\n    const connectWallet = async ()=>{\n        if (\"solana\" in window) {\n            const provider = window.solana;\n            if (provider.isPhantom) {\n                await provider.connect();\n                setUser(provider.publicKey.toString());\n            // const response = await axios.get(`https://your-api.com/user/${user}`);\n            // console.log(response.data);\n            }\n        } else {\n            console.log(\"Please install Phantom wallet\");\n        }\n    };\n    connectWallet();\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"nav\", {\n        className: \"flex-between w-full mb-16 pt-3\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {\n                href: \"/\",\n                className: \"flex gap-2 items-center\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                    className: \" head_text text-center\",\n                    style: {\n                        fontSize: 40\n                    },\n                    children: \"Help Map\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                    lineNumber: 35,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                lineNumber: 34,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                        style: {\n                            fontSize: 20\n                        },\n                        children: [\n                            \" \",\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                style: {\n                                    fontSize: 20,\n                                    fontWeight: \"bold\"\n                                },\n                                children: \"Account: \"\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                                lineNumber: 38,\n                                columnNumber: 41\n                            }, undefined),\n                            \" \",\n                            user.substring(0, 10) + \"...\"\n                        ]\n                    }, void 0, true, {\n                        fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                        lineNumber: 38,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"br\", {}, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                        lineNumber: 39,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                        style: {\n                            fontSize: 20\n                        },\n                        children: [\n                            \" \",\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                style: {\n                                    fontSize: 20,\n                                    fontWeight: \"bold\"\n                                },\n                                children: \"Amount: \"\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                                lineNumber: 40,\n                                columnNumber: 41\n                            }, undefined),\n                            \" \",\n                            userBalance + \" USDT\"\n                        ]\n                    }, void 0, true, {\n                        fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                        lineNumber: 40,\n                        columnNumber: 9\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n                lineNumber: 37,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\ganba\\\\Masa\\xfcst\\xfc\\\\Masa\\xfcst\\xfc\\\\Yeni klas\\xf6r\\\\frontend\\\\components\\\\Nav.jsx\",\n        lineNumber: 33,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9jb21wb25lbnRzL05hdi5qc3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFDNkI7QUFDRztBQUNOO0FBSzFCLE1BQU1HLE1BQU07SUFFVixNQUFNLENBQUNDLE1BQU1DLFFBQVEsR0FBR0osK0NBQVFBLENBQUM7SUFDakMsTUFBTSxDQUFDSyxhQUFhQyxlQUFlLEdBQUdOLCtDQUFRQSxDQUFDO0lBRS9DLE1BQU1PLGdCQUFnQjtRQUNwQixJQUFJLFlBQVlDLFFBQVE7WUFDdEIsTUFBTUMsV0FBV0QsT0FBT0UsTUFBTTtZQUM5QixJQUFJRCxTQUFTRSxTQUFTLEVBQUU7Z0JBQ3RCLE1BQU1GLFNBQVNHLE9BQU87Z0JBQ3RCUixRQUFTSyxTQUFTSSxTQUFTLENBQUNDLFFBQVE7WUFFcEMseUVBQXlFO1lBQ3pFLDhCQUE4QjtZQUNoQztRQUNGLE9BQU87WUFDTEMsUUFBUUMsR0FBRyxDQUFDO1FBQ2Q7SUFDRjtJQUVBVDtJQUdBLHFCQUNFLDhEQUFDVTtRQUFJQyxXQUFVOzswQkFDYiw4REFBQ25CLGtEQUFJQTtnQkFBQ29CLE1BQUs7Z0JBQUlELFdBQVU7MEJBQ3ZCLDRFQUFDRTtvQkFBS0YsV0FBVTtvQkFBeUJHLE9BQU87d0JBQUVDLFVBQVU7b0JBQUc7OEJBQUc7Ozs7Ozs7Ozs7OzBCQUVwRSw4REFBQ0M7O2tDQUNDLDhEQUFDSDt3QkFBS0MsT0FBTzs0QkFBRUMsVUFBVTt3QkFBRzs7NEJBQUc7MENBQUMsOERBQUNGO2dDQUFLQyxPQUFPO29DQUFFQyxVQUFVO29DQUFJRSxZQUFXO2dDQUFPOzBDQUFHOzs7Ozs7NEJBQWdCOzRCQUFFckIsS0FBS3NCLFNBQVMsQ0FBQyxHQUFFLE1BQUk7Ozs7Ozs7a0NBQ3pILDhEQUFDQzs7Ozs7a0NBQ0QsOERBQUNOO3dCQUFLQyxPQUFPOzRCQUFFQyxVQUFVO3dCQUFHOzs0QkFBRzswQ0FBQyw4REFBQ0Y7Z0NBQUtDLE9BQU87b0NBQUVDLFVBQVU7b0NBQUlFLFlBQVk7Z0NBQU87MENBQUc7Ozs7Ozs0QkFBZTs0QkFBRW5CLGNBQVk7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFJeEg7QUFFQSxpRUFBZUgsR0FBR0EsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL215LWFwcC8uL2NvbXBvbmVudHMvTmF2LmpzeD85ODk5Il0sInNvdXJjZXNDb250ZW50IjpbIlwidXNlIGNsaWVudFwiXHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XHJcbmltcG9ydCB7IHVzZVN0YXRlfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBheGlvcyBmcm9tICdheGlvcyc7XHJcblxyXG5cclxuXHJcblxyXG5jb25zdCBOYXYgPSAoKSA9PiB7XHJcblxyXG4gIGNvbnN0IFt1c2VyLCBzZXRVc2VyXSA9IHVzZVN0YXRlKFwiXCIpO1xyXG4gIGNvbnN0IFt1c2VyQmFsYW5jZSwgc2V0dXNlckJhbGFuY2VdID0gdXNlU3RhdGUoMCk7XHJcblxyXG4gIGNvbnN0IGNvbm5lY3RXYWxsZXQgPSBhc3luYyAoKSA9PiB7XHJcbiAgICBpZiAoXCJzb2xhbmFcIiBpbiB3aW5kb3cpIHtcclxuICAgICAgY29uc3QgcHJvdmlkZXIgPSB3aW5kb3cuc29sYW5hO1xyXG4gICAgICBpZiAocHJvdmlkZXIuaXNQaGFudG9tKSB7XHJcbiAgICAgICAgYXdhaXQgcHJvdmlkZXIuY29ubmVjdCgpO1xyXG4gICAgICAgIHNldFVzZXIoIHByb3ZpZGVyLnB1YmxpY0tleS50b1N0cmluZygpKTtcclxuXHJcbiAgICAgICAgLy8gY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBheGlvcy5nZXQoYGh0dHBzOi8veW91ci1hcGkuY29tL3VzZXIvJHt1c2VyfWApO1xyXG4gICAgICAgIC8vIGNvbnNvbGUubG9nKHJlc3BvbnNlLmRhdGEpO1xyXG4gICAgICB9XHJcbiAgICB9IGVsc2Uge1xyXG4gICAgICBjb25zb2xlLmxvZyhcIlBsZWFzZSBpbnN0YWxsIFBoYW50b20gd2FsbGV0XCIpO1xyXG4gICAgfVxyXG4gIH07XHJcblxyXG4gIGNvbm5lY3RXYWxsZXQoKTtcclxuXHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8bmF2IGNsYXNzTmFtZT0nZmxleC1iZXR3ZWVuIHctZnVsbCBtYi0xNiBwdC0zJz5cclxuICAgICAgPExpbmsgaHJlZj1cIi9cIiBjbGFzc05hbWU9J2ZsZXggZ2FwLTIgaXRlbXMtY2VudGVyJz5cclxuICAgICAgICA8c3BhbiBjbGFzc05hbWU9JyBoZWFkX3RleHQgdGV4dC1jZW50ZXInIHN0eWxlPXt7IGZvbnRTaXplOiA0MCB9fT5IZWxwIE1hcDwvc3Bhbj5cclxuICAgICAgPC9MaW5rPlxyXG4gICAgICA8c2VjdGlvbj5cclxuICAgICAgICA8c3BhbiBzdHlsZT17eyBmb250U2l6ZTogMjAgfX0+IDxzcGFuIHN0eWxlPXt7IGZvbnRTaXplOiAyMCwgZm9udFdlaWdodDonYm9sZCcgfX0+QWNjb3VudDogPC9zcGFuPiB7dXNlci5zdWJzdHJpbmcoMCwxMCkrXCIuLi5cIn08L3NwYW4+XHJcbiAgICAgICAgPGJyIC8+XHJcbiAgICAgICAgPHNwYW4gc3R5bGU9e3sgZm9udFNpemU6IDIwIH19PiA8c3BhbiBzdHlsZT17eyBmb250U2l6ZTogMjAsIGZvbnRXZWlnaHQ6ICdib2xkJyB9fT5BbW91bnQ6IDwvc3Bhbj4ge3VzZXJCYWxhbmNlK1wiIFVTRFRcIn08L3NwYW4+XHJcbiAgICAgIDwvc2VjdGlvbj5cclxuICAgIDwvbmF2PlxyXG4gIClcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgTmF2O1xyXG4iXSwibmFtZXMiOlsiTGluayIsInVzZVN0YXRlIiwiYXhpb3MiLCJOYXYiLCJ1c2VyIiwic2V0VXNlciIsInVzZXJCYWxhbmNlIiwic2V0dXNlckJhbGFuY2UiLCJjb25uZWN0V2FsbGV0Iiwid2luZG93IiwicHJvdmlkZXIiLCJzb2xhbmEiLCJpc1BoYW50b20iLCJjb25uZWN0IiwicHVibGljS2V5IiwidG9TdHJpbmciLCJjb25zb2xlIiwibG9nIiwibmF2IiwiY2xhc3NOYW1lIiwiaHJlZiIsInNwYW4iLCJzdHlsZSIsImZvbnRTaXplIiwic2VjdGlvbiIsImZvbnRXZWlnaHQiLCJzdWJzdHJpbmciLCJiciJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./components/Nav.jsx\n");
 
 /***/ }),
 
@@ -310,7 +178,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/mime-db","vendor-chunks/axios","vendor-chunks/follow-redirects","vendor-chunks/debug","vendor-chunks/form-data","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/ms","vendor-chunks/supports-color","vendor-chunks/delayed-stream","vendor-chunks/has-flag"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fnot-found&page=%2Fnot-found&appPaths=&pagePath=node_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-error.js&appDir=C%3A%5CUsers%5Cganba%5CMasa%C3%BCst%C3%BC%5CMasa%C3%BCst%C3%BC%5CYeni%20klas%C3%B6r%5Cfrontend%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cganba%5CMasa%C3%BCst%C3%BC%5CMasa%C3%BCst%C3%BC%5CYeni%20klas%C3%B6r%5Cfrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fnot-found&page=%2Fnot-found&appPaths=&pagePath=node_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-error.js&appDir=C%3A%5CUsers%5Cganba%5CMasa%C3%BCst%C3%BC%5CMasa%C3%BCst%C3%BC%5CYeni%20klas%C3%B6r%5Cfrontend%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cganba%5CMasa%C3%BCst%C3%BC%5CMasa%C3%BCst%C3%BC%5CYeni%20klas%C3%B6r%5Cfrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

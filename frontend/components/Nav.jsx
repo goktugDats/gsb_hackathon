@@ -18,8 +18,8 @@ const Nav = () => {
         await provider.connect();
         setUser( provider.publicKey.toString());
 
-        const response = await axios.get(`https://your-api.com/user/${user}`);
-        console.log(response.data);
+        // const response = await axios.get(`https://your-api.com/user/${user}`);
+        // console.log(response.data);
       }
     } else {
       console.log("Please install Phantom wallet");

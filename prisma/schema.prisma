@@ -47,3 +47,13 @@ model wisher {
   location        String?   @db.VarChar
   check_out       Int?
 }
+
+model lastwish {
+  id          Int      @id @default(autoincrement())
+  secretid    String?  @db.VarChar
+  tc_id       String?  @db.VarChar
+  message     String?  @db.VarChar
+  message_url String?  @db.VarChar
+  toPublicid  String?  @db.VarChar
+  alive       Boolean?
+}

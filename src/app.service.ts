@@ -5,7 +5,7 @@ import * as base58 from 'bs58';
 @Injectable()
 export class AppService {
   getHello() {
-
     return 'Hello World!';
   }
+
 }

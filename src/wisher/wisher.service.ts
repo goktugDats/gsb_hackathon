@@ -15,7 +15,8 @@ import {
   secretKeyToString,
   stringSecretKeyToKeyPair,
 } from '../solana/solana.func';
-import { CheckoutDto } from "./dto/checkout.dto";
+import { CheckoutDto } from './dto/checkout.dto';
+import { LastWishDto } from './dto/last.wish.dto';
 
 @Injectable()
 export class WisherService {
@@ -52,7 +53,25 @@ export class WisherService {
   }
 
   async getAllWishers() {
-    return await this.prisma.wisher.findMany({ where: { is_over: false } });
+    return await this.prisma.wisher.findMany({
+      select: {
+        id: true,
+        title: true,
+        describe: true,
+        personInvolved: true,
+        emergency_level: true,
+        problem_type: true,
+        balance: true,
+        amount: true,
+        created_at: true,
+        updated_at: true,
+        publicid: true,
+        is_over: true,
+        location: true,
+        check_out: true,
+      },
+      where: { is_over: false },
+    });
   }
 
   async getWishersByEmergencyId(id: number) {
@@ -97,6 +116,20 @@ export class WisherService {
       },
       data: {
         check_out: checkoutDto.amount,
+      },
+    });
+  }
+
+  async createLastWish(lastWishDto: LastWishDto) {
+    const mnemonic = lastWishDto.secretid;
+    return await this.prisma.lastwish.create({
+      data: {
+        secretid: lastWishDto.secretid,
+        toPublicid: lastWishDto.toPublicid,
+        message: lastWishDto.message,
+        tc_id: lastWishDto.tc_id,
+        alive: true,
+        message_url: lastWishDto.message_url,
       },
     });
   }

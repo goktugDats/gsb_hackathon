@@ -8,9 +8,10 @@ import {
 } from '@nestjs/common';
 import { WisherService } from './wisher.service';
 import { ApiBody, ApiParam, ApiResponse } from '@nestjs/swagger';
-import { WisherCreateDTO, WisherDTO } from "./dto/wisher.dto";
+import { WisherCreateDTO, WisherDTO } from './dto/wisher.dto';
 import { BrandDTO } from './dto/brand.dto';
-import { CheckoutDto } from "./dto/checkout.dto";
+import { CheckoutDto } from './dto/checkout.dto';
+import { LastWishDto } from './dto/last.wish.dto';
 
 @Controller()
 export class WisherController {
@@ -43,5 +44,17 @@ export class WisherController {
   @ApiBody({ type: CheckoutDto })
   async checkout(@Body() checkoutDto: CheckoutDto) {
     return await this.wisherService.transaction(checkoutDto);
+  }
+
+  @Post('wisher/last')
+  @ApiBody({ type: LastWishDto })
+  async lastWish(@Body() lastWishDto: LastWishDto) {
+    try {
+      await this.wisherService.createLastWish(lastWishDto);
+      return { completed: true };
+    } catch (e) {
+      console.log(e);
+    }
+    return { completed: false };
   }
 }

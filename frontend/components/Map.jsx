@@ -92,345 +92,7 @@ const mapStyles = [
   }
 ];
 
-const api = [
-  {
-    "id": 1,
-    "title": "İstanbul",
-    "describe": "Location in Istanbul, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "41.0082, 28.9784",
-    "check_out": 0
-  },
-  {
-    "id": 2,
-    "title": "Ankara",
-    "describe": "Location in Ankara, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "39.9334, 32.8597",
-    "check_out": 0
-  },
-  {
-    "id": 3,
-    "title": "İzmir",
-    "describe": "Location in Izmir, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "38.4192, 27.1287",
-    "check_out": 0
-  },
-  {
-    "id": 4,
-    "title": "Bursa",
-    "describe": "Location in Bursa, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "40.1826, 29.0669",
-    "check_out": 0
-  },
-  {
-    "id": 5,
-    "title": "Adana",
-    "describe": "Location in Adana, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "37.0000, 35.3213",
-    "check_out": 0
-  },
-  {
-    "id": 6,
-    "title": "Antalya",
-    "describe": "Location in Antalya, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "36.8969, 30.7133",
-    "check_out": 0
-  },
-  {
-    "id": 7,
-    "title": "Konya",
-    "describe": "Location in Konya, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "37.8714, 32.4846",
-    "check_out": 0
-  },
-  {
-    "id": 8,
-    "title": "Isparta",
-    "describe": "Location in Isparta, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "37.7648, 30.5566",
-    "check_out": 0
-  },
-  {
-    "id": 9,
-    "title": "Trabzon",
-    "describe": "Location in Trabzon, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "41.0053, 39.7262",
-    "check_out": 0
-  },
-  {
-    "id": 10,
-    "title": "Mersin",
-    "describe": "Location in Mersin, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "36.7955, 34.6179",
-    "check_out": 0
-  },
-  {
-    "id": 11,
-    "title": "Eskişehir",
-    "describe": "Location in Eskişehir, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "39.7669, 30.5256",
-    "check_out": 0
-  },
-  {
-    "id": 12,
-    "title": "Samsun",
-    "describe": "Location in Samsun, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "41.2867, 36.3300",
-    "check_out": 0
-  },
-  {
-    "id": 13,
-    "title": "Gaziantep",
-    "describe": "Location in Gaziantep, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "37.059, 37.381",
-    "check_out": 0
-  },
-  {
-    "id": 14,
-    "title": "Bolu",
-    "describe": "Location in Bolu, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "40.7361, 31.6061",
-    "check_out": 0
-  },
-  {
-    "id": 15,
-    "title": "Kahramanmaraş",
-    "describe": "Location in Kahramanmaraş, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "37.5736, 36.9375",
-    "check_out": 0
-  },
-  {
-    "id": 16,
-    "title": "Sivas",
-    "describe": "Location in Sivas, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "39.7500, 37.0167",
-    "check_out": 0
-  },
-  {
-    "id": 17,
-    "title": "Balıkesir",
-    "describe": "Location in Balıkesir, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "39.6481, 27.8827",
-    "check_out": 0
-  },
-  {
-    "id": 18,
-    "title": "Denizli",
-    "describe": "Location in Denizli, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "37.7742, 29.0872",
-    "check_out": 0
-  },
-  {
-    "id": 19,
-    "title": "Mardin",
-    "describe": "Location in Mardin, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 500,
-    "amount": 1000,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "7jVL6zCWQWL6WxbaHg5DaNM5tKTXeyUaVMGb4e5LtTaB",
-    "is_over": false,
-    "location": "37.3122, 40.7351",
-    "check_out": 0
-  },
-  {
-    "id": 8,
-    "title": "Acil Tedavi",
-    "describe": "Example Description",
-    "personInvolved": 3,
-    "emergency_level": 1.5,
-    "problem_type": 6,
-    "balance": 500,
-    "amount": 1000,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "text": "Example Text",
-    "publicid": "7jVL6zCWQWL6WxbaHg5DaNM5tKTXeyUaVMGb4e5LtTaB",
-    "is_over": false,
-    "location": "40.1826,29.0671",
-    "check_out": 0
-  },
-  {
-    "id": 20,
-    "title": "Van",
-    "describe": "Location in Van, Turkey",
-    "personInvolved": 0,
-    "emergency_level": 0,
-    "problem_type": 2,
-    "balance": 0,
-    "amount": 0,
-    "created_at": "2023-12-16T00:00:00.000Z",
-    "updated_at": "2023-12-16T00:00:00.000Z",
-    "publicid": "",
-    "is_over": false,
-    "location": "38.5019, 43.3566",
-    "check_out": 0
-  }
-]
+
 
 
 
@@ -438,7 +100,7 @@ const api = [
 
 const Map = () => {
 
-  const [api1, setApi1] = useState(null);
+  const [api, setApi] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -447,11 +109,12 @@ const Map = () => {
         throw new Error("HTTP error " + response.status);
       }
       const data = await response.json();
-      setApi1(data);
+      setApi(data);
     }
 
     fetchData();
   }, []);
+  console.log(api);
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API
@@ -470,7 +133,7 @@ const Map = () => {
 
   const [activeTab, setActiveTab] = useState('disaster');
   const [showSubButtons, setShowSubButtons] = useState(false);
-  const [problemType, setProblemType] = useState(null);
+  const [problemType, setProblemType] = useState('2');
 
 
   const [selectedLocation, setSelectedLocation] = React.useState(null);
@@ -488,16 +151,16 @@ const Map = () => {
           setActiveTab('disaster');
           setShowSubButtons(!showSubButtons);
         }} className="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600">Doğal Afet</button>
-        <button onClick={() => { setActiveTab('disease'); setProblemType(6) }} className="px-4 py-2 text-white bg-yellow-500 rounded hover:bg-yellow-600">Hastalık</button>
-        <button onClick={() => setActiveTab('emergency')} className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Acil Yardım</button>
+        <button onClick={() => { setActiveTab('disease'); setProblemType('6') }} className="px-4 py-2 text-white bg-yellow-500 rounded hover:bg-yellow-600">Hastalık</button>
+        <button onClick={() => {setActiveTab('emergency'); setProblemType('7')}} className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Acil Yardım</button>
       </nav>
       {showSubButtons && activeTab === 'disaster' && (
         <nav className="flex justify-center space-x-4 my-4">
-          <button onClick={() => setProblemType(1)} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">Kıyafet</button>
-          <button onClick={() => setProblemType(2)} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">Yiyecek-İçecek</button>
-          <button onClick={() => setProblemType(3)} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">Çadır</button>
-          <button onClick={() => setProblemType(4)} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">İş Makinesi</button>
-          <button onClick={() => setProblemType(5)} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">Elektronik Malzemeler</button>
+          <button onClick={() => setProblemType('1')} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">Kıyafet</button>
+          <button onClick={() => setProblemType('2')} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">Yiyecek-İçecek</button>
+          <button onClick={() => setProblemType('3')} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">Çadır</button>
+          <button onClick={() => setProblemType('4')} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">İş Makinesi</button>
+          <button onClick={() => setProblemType('5')} className="px-4 py-2 text-white bg-black rounded hover:bg-red-600">Elektronik Malzemeler</button>
         </nav>
       )}
       <GoogleMap

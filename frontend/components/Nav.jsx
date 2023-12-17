@@ -35,7 +35,7 @@ const Nav = () => {
           <button style={{ fontWeight: '1000', fontSize: '25px' }} className="px-4 py-2 text-black rounded hover:bg-black-600">Yardım Haritası</button>
         </Link>
         <Link href="/wish">
-          <button style={{fontWeight:'1000', fontSize:'25px', color:'#010101'}} className="px-4 py-2 text-black rounded hover:bg-black-600">Son İstek</button>
+          <button style={{fontWeight:'1000', fontSize:'25px', color:'#010101'}} className="px-4 py-2 text-black rounded hover:bg-black-600">Desteğini Al</button>
         </Link>
       </nav>
       

@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <section className="w-full flex-center flex-col">
             <h1 className="head_text text-center blue_gradient">
-                Mirasçı Olduğunu Doğrula
+                Desteğini Talep Et!
                 <br className="max-md:hidden" />
                 <br className="max-md:hidden" />
                 <br className="max-md:hidden" />

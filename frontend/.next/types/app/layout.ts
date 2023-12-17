@@ -1,4 +1,4 @@
-// File: C:\Users\ganba\Masaüstü\Masaüstü\Yeni klasör\frontend\app\layout.jsx
+// File: /Users/midex/Desktop/gsb_hack/front/gsb_hackathon/frontend/app/layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

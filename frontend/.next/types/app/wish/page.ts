@@ -1,4 +1,4 @@
-// File: C:\Users\ganba\Masaüstü\Masaüstü\Yeni klasör\frontend\app\wish\page.jsx
+// File: /Users/midex/Desktop/gsb_hack/front/gsb_hackathon/frontend/app/wish/page.jsx
 import * as entry from '../../../../app/wish/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
